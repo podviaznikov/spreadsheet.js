@@ -2,7 +2,7 @@
 The first and initial goal of the library is to create .xlsx files from JavaScript.
 However this can be extended in future regarding on the development progress.
 
-Current version is 0.0.2
+Current version is 0.0.3
 
 ## License
 

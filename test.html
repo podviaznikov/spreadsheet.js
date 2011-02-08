@@ -3,21 +3,27 @@
 <html>
 <head>
     <title></title>
-    <script type="text/javascript" src="lib/excel.js"></script>
+    <script src="lib/spreadsheet.js"></script>
+    <script src="import/jszip.js"></script>
+    <script src="import/file.io.js"></script>
 </head>
 <body>
-<script type="text/javascript">
+<script>
     var sheet1=new Sheet(1,"S1");
     var sheet2=new Sheet(2,"S2");
-    var wb = new Workbook();
+    var wb=new Workbook();
     wb.addSheet(sheet1);
     wb.addSheet(sheet2);
     console.log(wb.toXML());
-    var ws= new Worksheet();
+    var ws=new Worksheet();
     ws.addRow(1);
     ws.addCell(2,1,"Hello");
     console.log(ws.toXML());
+    var dataURL=buildFile(wb,ws);
+    var blobURL = window.createObjectURL(FileIo.encodedDataToBlob(dataURL,'application/zip'));
+    window.open(blobURL);
 
+    window.open(dataURL);
 </script>
 </body>
 </html>
