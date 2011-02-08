@@ -14,6 +14,9 @@
     wb.addSheet(sheet2);
     console.log(wb.toXML());
     var ws= new Worksheet();
+    ws.addRow(1);
+    ws.addCell(2,1,"Hello");
+    console.log(ws.toXML());
 
 </script>
 </body>

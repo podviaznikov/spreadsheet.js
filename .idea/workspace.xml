@@ -24,10 +24,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="excel.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="excel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/excel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="74" column="5" selection-start="2237" selection-end="2237" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -36,16 +36,16 @@
       <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="366" selection-end="366" vertical-scroll-proportion="-8.16">
+            <state line="17" column="28" selection-start="507" selection-end="507" vertical-scroll-proportion="-11.56">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="77" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.1486014">
               <folding />
             </state>
           </provider>
@@ -65,9 +65,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/lib/excel.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -98,7 +98,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -133,6 +132,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,28 +224,28 @@
         <state line="15" column="29" selection-start="733" selection-end="733" vertical-scroll-proportion="0.33216783" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="77" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="591" column="10" selection-start="7497" selection-end="7497" vertical-scroll-proportion="0.3321976">
-          <folding />
-        </state>
+        <state line="591" column="10" selection-start="7497" selection-end="7497" vertical-scroll-proportion="0.3321976" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="366" selection-end="366" vertical-scroll-proportion="-8.16">
+        <state line="17" column="28" selection-start="507" selection-end="507" vertical-scroll-proportion="-11.56">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/excel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="74" column="5" selection-start="2237" selection-end="2237" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.1486014">
           <folding />
         </state>
       </provider>
