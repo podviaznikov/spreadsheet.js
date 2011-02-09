@@ -9,11 +9,11 @@
 </head>
 <body>
 <script>
-    var sheet1=new Sheet(1,"S1");
+    var sheet1=new Sheet(1,"Sheet1");
     var sheet2=new Sheet(2,"S2");
     var wb=new Workbook();
     wb.addSheet(sheet1);
-    wb.addSheet(sheet2);
+   // wb.addSheet(sheet2);
     console.log(wb.toXML());
     var ws=new Worksheet();
     ws.addRow(1);
@@ -22,8 +22,6 @@
     var dataURL=buildFile(wb,ws);
     var blobURL = window.createObjectURL(FileIo.encodedDataToBlob(dataURL,'application/zip'));
     window.open(blobURL);
-
-    window.open(dataURL);
 </script>
 </body>
 </html>
