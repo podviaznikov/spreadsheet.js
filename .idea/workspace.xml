@@ -24,10 +24,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="spreadsheet.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="spreadsheet.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/spreadsheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="45" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0">
+            <state line="173" column="10" selection-start="4710" selection-end="4717" vertical-scroll-proportion="0.4458042">
               <folding />
             </state>
           </provider>
@@ -42,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="117" selection-end="117" vertical-scroll-proportion="0.06049822">
+            <state line="17" column="19" selection-start="505" selection-end="505" vertical-scroll-proportion="-11.56">
               <folding />
             </state>
           </provider>
@@ -272,16 +272,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/spreadsheet.js">
+    <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="45" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0">
+        <state line="17" column="19" selection-start="505" selection-end="505" vertical-scroll-proportion="-11.56">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
+    <entry file="file://$PROJECT_DIR$/lib/spreadsheet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="117" selection-end="117" vertical-scroll-proportion="0.06049822">
+        <state line="173" column="10" selection-start="4710" selection-end="4717" vertical-scroll-proportion="0.4458042">
           <folding />
         </state>
       </provider>
