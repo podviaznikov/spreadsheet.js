@@ -3,12 +3,38 @@
 <html>
 <head>
     <title></title>
+    <script src="lib/xml.js"></script>
     <script src="lib/spreadsheet.js"></script>
     <script src="import/jszip.js"></script>
     <script src="import/file.io.js"></script>
 </head>
 <body>
 <script>
+var contentTypesFile="<?xml version='1.0' encoding='UTF-8' standalone='yes'?>";
+contentTypesFile+="<Types xmlns='http://schemas.openxmlformats.org/package/2006/content-types'><Default Extension='rels' ContentType='application/vnd.openxmlformats-package.relationships+xml'/>";
+contentTypesFile+="<Default Extension='xml' ContentType='application/xml'/>";
+contentTypesFile+="<Override PartName='/xl/workbook.xml' ContentType='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml'/>";
+contentTypesFile+="<Override PartName='/xl/worksheets/sheet1.xml' ContentType='application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml'/><Override PartName='/xl/worksheets/sheet2.xml' ContentType='application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml'/><Override PartName='/xl/worksheets/sheet3.xml' ContentType='application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml'/>";
+contentTypesFile+="<Override PartName='/xl/theme/theme1.xml' ContentType='application/vnd.openxmlformats-officedocument.theme+xml'/>";
+contentTypesFile+="<Override PartName='/xl/styles.xml' ContentType='application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml'/>";
+contentTypesFile+="<Override PartName='/xl/sharedStrings.xml' ContentType='application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml'/>";
+contentTypesFile+="<Override PartName='/docProps/core.xml' ContentType='application/vnd.openxmlformats-package.core-properties+xml'/>";
+contentTypesFile+="<Override PartName='/docProps/app.xml' ContentType='application/vnd.openxmlformats-officedocument.extended-properties+xml'/></Types>";
+    function buildFile(workbook,sheet)
+{
+    var file = new JSZip();
+    file.add('[Content_Types].xml',contentTypesFile);
+    var _rels=file.folder('_rels');
+    var docProps=file.folder('docProps');
+    var xl = file.folder('xl');
+    var xl_rels = xl.folder('_rels');
+    var theme=xl.folder('theme');
+    xl.add('workbook.xml',workbook.toXML());
+    var worksheets=xl.folder('worksheets');
+    worksheets.add('sheet1.xml',sheet.toXML());
+    var content = file.generate();
+    return content;
+};
     var sheet1=new Sheet(1,"Sheet1");
     var sheet2=new Sheet(2,"S2");
     var wb=new Workbook();
